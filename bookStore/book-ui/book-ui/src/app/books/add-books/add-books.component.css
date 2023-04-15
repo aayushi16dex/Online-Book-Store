@@ -1,0 +1,38 @@
+
+.resetBtn{
+    margin-right: 1rem;
+}
+.resetBtn, .submitBtn{
+    cursor: pointer;
+}
+
+.dashboardDesign{
+    margin: 3rem 0 0 5rem;
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    border: 3px solid lightgray;
+}
+
+.dashboardDesign:hover{
+    opacity: 0.7;
+}
+
+.mainBody {
+    background-image: url("https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    padding-bottom: 5rem;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.container{
+    width: 25rem;
+    border: 2px solid #282828;
+    border-radius: 5px;
+    margin: 2rem auto;
+    background-color: white;
+}
+
+input{
+    border: 2px solid rgb(191, 191, 191);
+}

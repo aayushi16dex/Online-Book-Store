@@ -1,0 +1,161 @@
+<header class="row">
+  <!-- Logo -->
+  <div class="col-4 logo">
+    <div class="d-flex iconLogoDiv"> <i class="fa fa-book"></i> BookClub </div>
+    <h6>A store for learning</h6>
+  </div>
+
+  <!-- Navigation links --> 
+  <div class="col-5">
+    <nav class="navbar navbar-expand-lg navColor">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav main_nav">
+          <a class="nav-item nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+          <a class="nav-item nav-link" routerLink="/book" routerLinkActive="active">Books</a>
+          <a class="nav-item nav-link" routerLink="/trending" routerLinkActive="active">Trending</a>
+          <!-- <a class="nav-item nav-link">About</a> -->
+          <!-- <a class="nav-item nav-link">Contact</a> -->
+          <a [routerLink]="['cart/view']" routerLinkActive="active" *ngIf="displayName !== null" class="nav-item nav-link cartIcon"><i class="fa fa-shopping-cart"></i>Cart</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+ 
+  <div *ngIf=" (displayName == null ) then thenBlock else elseBlock"></div>
+
+  <ng-template #thenBlock>
+    <!-- Login and signup button -->
+    <div class="col-3 d-flex login">
+      <div><i class="fa fa-user userIcon"></i></div>
+      <div><a (click)="openSignUp(register)">Sign up</a></div>
+      <div class="separator">|</div>
+      <div><a (click)="openSignIn(login)">Sign in</a></div>
+    </div>
+  </ng-template>
+
+  <ng-template #elseBlock> 
+    <!-- Profile and signout button -->
+    <div class="col-3 d-flex login">
+      <div class="userDesign"><i class="fa fa-user userIcon"></i></div>
+      <div class="profile">{{displayName}}</div>
+      <div class="separator">|</div>
+      <div><a (click)="signingOut()">Log out</a></div>
+    </div>
+  </ng-template>
+
+</header>
+
+<!-- Login HTML -->
+<ng-template #login let-c="close" let-d="dismiss">
+  <div class="container" id="myModal">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title mb-4 mt-3">Sign in</h4>
+      <button type="button" class="btn-close closeBtn" aria-label="Close" (click)="d('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <form #loginForm="ngForm" (submit)="signIn(loginForm)">
+        <!-- <form #registerForm="ngForm" (submit)="addUser(registerForm)"></form> -->
+        <!-- Email input -->
+        <div class="form-outline mb-4 ">
+          <label class="form-label" for="email">Email address</label>
+          <input type="email" [(ngModel)]="email" name="email" class="form-control" />
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <label class="form-label" for="password">Password</label>
+          <input type="password" [(ngModel)]="password" name="password" class="form-control" />
+        </div>
+
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form2Example31" />
+              <label class="form-check-label" for="form2Example31"> Remember me </label>
+            </div>
+          </div>
+
+          <div class="col">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn authBtn btn-block mb-4" (click)="c('Save click')">Sign in</button>
+
+        <!-- Register buttons -->
+        <div class="text-left mb-4">
+          <p>Not a member? <a routerLink="/register">Register</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
+
+
+<!-- Register HTML -->
+<ng-template #register let-c="close" let-d="dismiss">
+  <div class="container">
+    <div class="mb-4 mt-3 modal-header">
+      <h3>Registration Form</h3>
+      <button type="button" class="btn-close closeBtn" aria-label="Close" (click)="d('Cross click')"></button>
+    </div>
+
+    <div class="modal-body">
+      <form #registerForm="ngForm" (submit)="addUser(registerForm)">
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label" for="firstName">First name</label>
+              <input type="text" [(ngModel)]="firstName" name="firstName" class="form-control" />
+
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <label class="form-label" for="lastName">Last name</label>
+              <input type="text" [(ngModel)]="lastName" name="lastName" class="form-control" />
+
+            </div>
+          </div>
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="email">Email address</label>
+          <input type="email" [(ngModel)]="email" name="email" class="form-control" />
+
+        </div>
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="password">Password</label>
+          <input type="password" [(ngModel)]="password" name="password" class="form-control" />
+
+        </div>
+
+        <div class="form-check d-flex mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+          <label class="form-check-label" for="form2Example33">
+            I agree to the terms & conditions
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary authBtn mb-4" (click)="c('Save click')">Sign up</button>
+
+        <div class="text-center mb-3">
+          <p>or</p>
+          <button type="button" class="btn btn-danger btn-block mb-2 mx-1">
+            <i class="fa fa-google mr-3 signUpIcon"></i>Sign up with Google
+          </button>
+
+          <button type="button" class="btn btn-primary btn-block mb-2 mx-1">
+            <i class="fa fa-facebook mr-3 signUpIcon"></i>Sign up with Facebook
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
+

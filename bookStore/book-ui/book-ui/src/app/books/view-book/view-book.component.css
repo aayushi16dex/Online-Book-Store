@@ -1,0 +1,15 @@
+.bookImg{
+    box-sizing: border-box;
+    width: 20rem;
+    height: 25rem;
+    margin-left: 10rem;
+}
+
+.card{
+    width: 30rem;
+}
+
+/* .bookTitle{
+    font-size: 300;
+    font-weight: bold;
+} */

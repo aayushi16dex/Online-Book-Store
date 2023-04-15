@@ -1,0 +1,50 @@
+
+.cartDesign{
+    width: 65%;
+}
+.cardDesign{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+.cardShadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contShop{
+    text-decoration: none !important;
+}
+.deleteIcon{
+    color: red;
+    font-size: 1.2rem;
+}
+.paymentGateway{
+    background-color: teal;
+}
+.checkoutBtn{
+    background-color: white;
+    font-size: large;
+    border: 2px solid grey;
+    color: teal;
+}
+.checkoutBtn:hover{
+    color: black ;
+}
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+}
+
+/* bill */
+.successContainer{
+    
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    /* text-align: center; */
+    
+    border: 2px solid grey;
+    /* color: black; */
+    border-radius: 35px;
+    margin: 2rem 0rem;
+    margin-left: 31%;
+}

@@ -1,0 +1,164 @@
+/* Hero */
+#hero {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero::before {
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url('https://ychef.files.bbci.co.uk/976x549/p087djzt.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
+
+#hero h1,
+h3,
+button {
+    position: relative;
+    color: white;
+    text-align: left;
+    top: -5rem;
+    left: -3rem;
+}
+
+#hero h1 {
+    font-size: 4rem;
+}
+
+.exploreBtn {
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.exploreBtn:hover {
+    box-sizing: border-box;
+    border: 2px solid #e03a3c;
+    background-color: white;
+    color: #e03a3c;
+    font-weight: 500;
+}
+
+/******* Space ******/
+.spaceDiv {
+    width: 100%;
+    height: 10rem;
+    background-color: white;
+
+}
+
+/****** Counter *******/
+.client-count-wrp {
+    padding: 100px 0;
+    z-index: 1;
+    position: relative;
+    font-family: 'Roboto Condensed';
+}
+
+.client-count-wrp .skew:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: visible;
+    width: 100%;
+    height: 25rem;
+    background-image: url("https://media.istockphoto.com/id/1133454157/photo/pastel-bright-teal-colored-oil-painted-background.jpg?s=612x612&w=0&k=20&c=xgPOEZ422Axq0lFSVlYfpv4z2x_nNXFGEYnTNDkTXnw=");
+    z-index: -1;
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+}
+
+.heading h4 {
+    color: #413d3d;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+
+.client-count-wrp-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards {
+    width: 18rem;
+    background-color: white;
+    text-align: center;
+    box-shadow: 5px 10px 18px #888888;
+    height: 10rem;
+}
+
+.cards h4 {
+    color: black;
+    font-size: 45px;
+    /* line-height: 65px; */
+    margin-top: -1rem;
+}
+
+.cards p {
+    color: black;
+    font-size: 20px;
+}
+
+.client-count-wrp-inner .cards i{
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    font-size: 24px;
+    background: #fff;
+    color: #e03a3c;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    box-shadow: 0px 2px 25px rgb(0 0 0 / 10%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:991px) {
+    .mt-100 {
+        margin-top: 30px !important;
+    }
+
+    .client-count-wrp {
+        padding: 40px 0;
+    }
+
+    .client-count-wrp-inner {
+        flex-direction: column;
+    }
+
+    .cards h4 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .cards {
+        margin: 20px 0;
+    }
+
+    .client-count-wrp {
+        padding: 25px 0;
+        margin: 0 25px;
+    }
+}
+.i1, .i2, .i3, .i4{
+    position: relative !important;
+    top: -2rem;
+    left: 0rem;
+}

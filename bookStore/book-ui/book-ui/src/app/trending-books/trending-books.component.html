@@ -1,0 +1,18 @@
+<br><br>
+    <h2 class="heading">Trending Books</h2>
+<div class="row bookCardLayout">
+    <div *ngFor="let book of bookList" class="d-flex col-md-3 mx-auto my-5">
+        <a [routerLink]="['view', book._id]">
+            <div class="card " style="width: 18rem;">
+                <img [src]="book.Image" alt="img" class="bookImg d-block mx-auto">
+                <div class="card-body">
+                    <h5 class="card-title">{{book.Title}}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Rs. {{book.Price}}</li>
+                    <li class="list-group-item"><span class="fw-bold"> Author :</span> {{book.Author}}</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+header{
+	background-color:#45A29E ;
+    /* height: 4.5rem; */
+	box-sizing: border-box;
+	width: 100.8%;
+	overflow-x: hidden;
+}
+
+.logo {
+	font-size: 2.3rem;
+	font-weight: 500;
+	color: #413d3d;
+    justify-content: left;
+	box-sizing: border-box;
+	padding-left: 1rem;
+}
+
+.logo i{
+	color: rgb(255, 254, 251);
+	font-size: 2.2rem;
+	padding-top: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 0.6rem;
+}
+
+.logo h6{
+	text-align: center;
+	font-size: 0.8rem;
+	width: 25rem;
+	color: white;
+}
+
+.iconLogoDiv{
+	height: 2.9rem;
+
+}
+.login{
+    justify-content: right;
+    top: 1rem;
+	padding-top: 1.5rem;
+}
+.login div{
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    
+    float: right;
+} 
+.login div a{
+    text-decoration: none;
+    color: white;
+}
+
+.login div a:hover{
+    text-decoration: none;
+    color: #413d3d;
+    cursor: pointer;
+}
+
+.userIcon{
+	font-size: 2rem;
+}
+
+.separator{
+	color: white;
+	font-size: 2rem;
+}
+.main_nav{
+    margin-left: 2rem;
+}
+.main_nav a {
+	color: white;
+    padding: 0.9rem;
+	/* transition: background-color 0.6s ease-in-out 0s; */
+	border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.main_nav a:hover {
+	color: #282828;
+	cursor: pointer;
+}
+
+.authBtn{
+	background-color: #45A29E ;
+	color: white;
+	font-size: 1.2rem;
+    font-weight: 450;
+}
+
+.signUpIcon{
+	margin-right: 1rem;
+}
+
+.active{
+	color: black !important;
+}
+
+.profile{
+	font-size: 1.2rem !important;
+}
+
+.userDesign{
+	font-size: 1.5rem !important;
+}
+
+.cartIcon{
+    /* margin-left: 5rem; */
+	width: 8rem;
+}
+.fa-shopping-cart{
+	margin-right: 1rem;
+	font-size: 1.5rem;
+
+}

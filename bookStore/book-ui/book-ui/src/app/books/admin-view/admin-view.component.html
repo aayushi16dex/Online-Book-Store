@@ -1,0 +1,33 @@
+<div class="text-center mt-3">
+    <h3>Welcome Admin!</h3>
+</div>
+<div class="container">
+    <div class="mb-3 mt-3">
+        <button class="btn btn-success" routerLink="add">Add new book</button>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Book Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>Operation</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let book of bookList">
+            <td>{{book._id}}</td>
+            <td>{{book.Title}}</td>
+            <td>{{book.Author}}</td>
+            <td>{{book.Price}}</td>
+            <td>
+                <a [routerLink]="['edit', book._id]" class="text-center"><i class="fa fa-edit editBtn"></i></a>
+                <a [routerLink]="['delete', book._id]" class=" text-center"><i class="fa fa-trash deleteBtn"></i></a>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>

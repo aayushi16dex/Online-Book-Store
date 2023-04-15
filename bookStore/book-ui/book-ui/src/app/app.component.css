@@ -1,0 +1,23 @@
+.routerWidth{
+    min-height: 35rem;
+    /* background-color: whitesmoke; */
+}
+
+.modal-backdrop .fade .show{
+    z-index: 1050 !important;
+}
+
+/* Modal background */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050 !important;
+
+}
+
+::ng-deep ngb-modal-backdrop {
+    z-index: 1050 !important;
+  }

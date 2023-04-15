@@ -1,0 +1,152 @@
+.bookImg {
+    width: 10rem;
+    height: 12rem;
+    box-sizing: border-box;
+}
+
+.card-body {
+    border-bottom: 1px solid grey;
+    min-height: 5.5rem;
+}
+
+.cardAuthor {
+    min-height: 4rem;
+}
+
+.bookCardLayout {
+    margin: 0 3rem;
+    text-align: center;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.header_search {
+    height: 90px;
+    margin-left: 10rem;
+}
+
+.header_search_content {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.header_search_form_container {
+    width: 50%;
+    height: 50px;
+    border: solid 1px #e5e5e5;
+    border-radius: 5px;
+}
+
+.header_search_form {
+    width: 100%;
+    height: 100%;
+}
+
+.header_search_input {
+    display: block;
+    position: relative;
+    width: calc((100% - 50px) * 0.601);
+    height: 100%;
+    line-height: 50px;
+    border: none !important;
+    outline: none !important;
+    padding-left: 26px;
+    color: #7f7f7f;
+    float: left;
+    background-color: white;
+    width: 25rem;
+    border: 2px solid #282828;
+}
+
+.header_search_input::-webkit-input-placeholder {
+    font-size: 16px !important;
+    font-weight: 300;
+    line-height: 50px;
+    color: #a3a3a3 !important;
+}
+
+.header_search_input:-ms-input-placeholder {
+    font-size: 16px !important;
+    font-weight: 300;
+    line-height: 50px;
+    color: #a3a3a3 !important;
+}
+
+.header_search_input::input-placeholder {
+    font-size: 16px !important;
+    font-weight: 300;
+    line-height: 50px;
+    color: #a3a3a3 !important;
+}
+
+.header_search_button {
+    position: absolute;
+    top: 0;
+    left: 25rem;
+    width: 50px;
+    height: 100%;
+    background: #45A29E;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.iconSearch {
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    justify-content: center;
+}
+
+.image {
+    border: 2px solid #fff;
+    width: 100%;
+    height: 184px;
+    overflow: hidden;
+  }
+  
+  .image img {
+    /* width: 100%;
+    height: 300; */
+        transition: all 2s ease-in-out;
+  }
+  
+  .image:hover img {
+        transform: scale(1.5,1.5);
+      cursor: pointer;
+  }
+
+  .bordering{
+    border-radius: 1rem;
+    box-shadow: 1px 1px 4px 4px lightgrey;
+  }
+
+@media only screen and (max-width: 991px) {
+
+    .header_search {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header_search {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .header_search {
+        display: none;
+    }
+}

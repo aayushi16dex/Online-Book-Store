@@ -1,0 +1,51 @@
+<div class="mainBody">
+  <button [routerLink]='["../../../admin"]' type="button" class="dashboardDesign btn btn-success">
+    Go to dashboard
+  </button>
+
+  <div class="container">
+    <div>
+      <h3 class="mb-3 mt-2 text-center">Update Book Information</h3>
+    </div>
+    <form #editBookForm="ngForm" (submit)="editBook(editBookForm)">
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="_id">Book Id</label>
+        <input type="text" [(ngModel)]="_id" name="_id" class="form-control" readonly="true" />
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form2Example2">Title</label>
+        <input type="text" [(ngModel)]="Title" name="Title" class="form-control" required />
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form2Example2">Price</label>
+        <input type="number" [(ngModel)]="Price" name="Price" class="form-control" required />
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form2Example2">Author</label>
+        <input type="text" [(ngModel)]="Author" name="Author" class="form-control" required />
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form2Example2">Genre</label>
+        <input type="text" [(ngModel)]="Genre" name="Genre" class="form-control" required />
+      </div>
+
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form2Example2">Image Url</label>
+        <input type="text" [(ngModel)]="Image" name="Image" class="form-control" required />
+      </div>
+
+      <!-- Submit button -->
+      <div class="right mb-4">
+        <button type="submit" class="btn editBtn btn-warning btn-floating"
+          [disabled]="!editBookForm.valid">Update</button>
+      </div>
+
+    </form>
+  </div>
+</div>

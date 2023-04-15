@@ -1,0 +1,141 @@
+
+/* old cart items */
+/* @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+}
+.container{
+    width: 50rem;
+    border: 2px solid lightgray;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+input{
+    font-size: 1rem !important;
+}
+.payment{
+    background-color: whitesmoke;
+}
+.cardBox{
+    background-color: white;
+    border: 2px solid lightgray !important;
+}
+.amt{
+    width: 5rem;
+}
+.deleteIcon{
+    color: red;
+    font-size: 1.2rem;
+} */
+
+
+/* empty cart */
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+    background-color: #eee;
+    font-family: 'Calibri', sans-serif !important;
+}
+.mt-100{
+   margin-top:100px;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card {
+    margin-bottom: 30px;
+    border: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    letter-spacing: .5px;
+    border-radius: 8px;
+    -webkit-box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
+    box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05);
+}
+.card .card-header {
+    background-color: #fff;
+    border-bottom: none;
+    padding: 24px;
+    border-bottom: 1px solid #f6f7fb;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.emptyCardBody{
+    padding: 30px;
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+    background-color: #4466f2!important;
+    border-color: #4466f2!important;
+}
+
+.emptyCard{
+    background-color: whitesmoke;
+}
+
+/* new cart */
+
+.cartDesign{
+    width: 65%;
+}
+.cardDesign{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+.cardShadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contShop{
+    text-decoration: none !important;
+}
+.deleteIcon{
+    color: red;
+    font-size: 1.2rem;
+}
+.paymentGateway{
+    background-color: teal;
+}
+.checkoutBtn{
+    background-color: white;
+    font-size: large;
+    border: 2px solid grey;
+    color: teal;
+}
+.checkoutBtn:hover{
+    color: black ;
+}
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+}
+
+/* bill */
+.successContainer{
+    
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    /* text-align: center; */
+    
+    border: 2px solid grey;
+    /* color: black; */
+    border-radius: 35px;
+    margin: 2rem 0rem;
+    margin-left: 31%;
+}
