@@ -2,7 +2,8 @@
     "name": "online-store",
     "version": "1.0.0",
     "engines":{
-    "node": ">=18 <19"
+    "node": "16.15.1",
+    "npm": "8.11.0"
     },
     "scripts": {
         "prebuild": "cd book-api && npm run build",
