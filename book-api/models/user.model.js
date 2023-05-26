@@ -3,8 +3,6 @@ const userSchema = mongoose.Schema({
 
     _id: {
         type: mongoose.SchemaTypes.String,
-        required: [true, "_id is required"],
-        unique: true
     },
     firstName: {
         type: mongoose.SchemaTypes.String,

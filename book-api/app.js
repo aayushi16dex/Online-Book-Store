@@ -7,9 +7,11 @@ var cors = require('cors');
 var mongoose = require('mongoose');
 
 mongoose.connect("mongodb+srv://bookShopDev:root@bookshop.3mx3v4m.mongodb.net/BookShopDevelopment",
-            () =>{console.log("Connection Successful")},
+            () =>{console.log("MongoDB connected successfully")},
             (err) =>{`Error in connection ${err}`}
 );
+
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
