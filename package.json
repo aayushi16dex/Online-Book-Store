@@ -7,7 +7,7 @@
     },
     "scripts": {
         "prebuild": "cd book-api && npm run build",
-        "build": "cd book-ui && npm run build",
+        "postbuild": "cd book-ui && npm run build",
         "prestart": "cd book-api && npm run start",
         "poststart": "cd book-ui && npm run start"
         
