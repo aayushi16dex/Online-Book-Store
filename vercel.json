@@ -9,7 +9,7 @@
       "builds": [
         {
           "src": "package.json",
-          "use": "@vercel/static-build",
+          "use": "@vercel/node@14.20",
           "config": {
             "chmod": "+x node_modules/.bin/*",
             "maxDuration": 60,
