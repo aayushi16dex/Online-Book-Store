@@ -9,7 +9,7 @@ import {HttpClientModule} from '@angular/common/http' /* add this */
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    // FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
