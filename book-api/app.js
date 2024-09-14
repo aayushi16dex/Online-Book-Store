@@ -5,12 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 var mongoose = require('mongoose');
+mongoose.set('strictQuery', false)
+require('dotenv').config();
 
-mongoose.connect("mongodb+srv://bookShopDev:root@bookshop.3mx3v4m.mongodb.net/BookShopDevelopment",
-            () =>{console.log("MongoDB connected successfully")},
-            (err) =>{`Error in connection ${err}`}
-);
-
+mongoose.connect(process.env.MONGO_URL+process.env.DATABASE_NAME)
+  .then(() => console.log('Database connected successfully'))
+  .catch((err) => { console.error(err); });
 
 
 var indexRouter = require('./routes/index');
@@ -51,5 +51,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.listen(process.env.PORT, () => console.log("Server is running on port", process.env.PORT));
 
 module.exports = app;

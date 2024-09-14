@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
-const userSchema = mongoose.Schema({
+const Constant = require('../utils/constants');
 
-    _id: {
-        type: mongoose.SchemaTypes.String,
-    },
+
+const userSchema = mongoose.Schema({
     firstName: {
         type: mongoose.SchemaTypes.String,
         required: [true, "First Name is required"]
@@ -20,9 +19,11 @@ const userSchema = mongoose.Schema({
     password: {
         type: mongoose.SchemaTypes.String,
         required: [true, "Password is required"]
-
     },
-    
+    role: {
+        type: Number,
+        default: Constant.USER_ROLE
+    }
 },
 {timestamp: true},
 );
