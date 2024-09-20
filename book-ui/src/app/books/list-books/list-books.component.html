@@ -1,39 +1,68 @@
-<br><br><br>
+<br /><br /><br />
 
- <!-- Search Bar -->
-<div class="header_search col-7 text-lg-left text-right ">
+<!-- Search Bar -->
+<div class="header_search col-7 text-lg-left text-right">
     <div class="header_search_content">
         <div class="header_search_form_container">
-            <form #searchBookForm="ngForm" (submit)="searchBook(searchBookForm)"
-                class="header_search_form clearfix">
-                <input type="search" [(ngModel)]="searching" name="searching" class="header_search_input"
-                    placeholder="Search for book..." required>
-                <button type="submit" class="header_search_button trans_300" value="Submit"><i
-                        class="fa fa-search iconSearch"></i>
+            <form
+                #searchBookForm="ngForm"
+                (submit)="searchBook(searchBookForm)"
+                class="header_search_form clearfix"
+            >
+                <input
+                    type="search"
+                    [(ngModel)]="searching"
+                    name="searching"
+                    class="header_search_input"
+                    placeholder="Search for book..."
+                    required
+                />
+                <button
+                    type="submit"
+                    class="header_search_button trans_300"
+                    value="Submit"
+                >
+                    <i class="fa fa-search iconSearch"></i>
                 </button>
             </form>
         </div>
     </div>
 </div>
 
-<div *ngIf="(bookList.length === 0 ) then noResult else displayBooks "></div>
+<div *ngIf="booksLength === 0; then noResult; else displayBooks"></div>
 
 <!-- If no result found -->
 <ng-template #noResult>
     <div class="container-fluid mt-100">
-        <div class="row ">
-            <div class="col-md-12 ">
+        <div class="row">
+            <div class="col-md-12">
                 <div class="card emptyCard">
                     <div class="card-header">
-                        <h5>Looks like we don't have any matches for " {{searching}} "</h5>
+                        <h5>
+                            Looks like we don't have any matches for "
+                            {{ searching }} "
+                        </h5>
                     </div>
                     <div class="card-body emptyCardBody cart">
                         <div class="col-sm-12 empty-cart-cls text-center">
-                            <img src="https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" width="500" height=auto class="img-fluid mb-4 mr-3 bordering">
-                            <h4><strong>Try searching with different keywords</strong></h4>
-                            <a [routerLink]="['../../book']" class="btn btn-warning cart-btn-transform m-3"
-                                data-abc="true">Continue
-                                shopping</a>
+                            <img
+                                src="https://images.unsplash.com/photo-1573855619003-97b4799dcd8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                width="500"
+                                height="auto"
+                                class="img-fluid mb-4 mr-3 bordering"
+                            />
+                            <h4>
+                                <strong
+                                    >Try searching with different
+                                    keywords</strong
+                                >
+                            </h4>
+                            <a
+                                [routerLink]="['../../book']"
+                                class="btn btn-warning cart-btn-transform m-3"
+                                data-abc="true"
+                                >Continue shopping</a
+                            >
                         </div>
                     </div>
                 </div>
@@ -46,19 +75,33 @@
 <ng-template #displayBooks>
     <div class="bookListDesign">
         <div class="row bookCardLayout">
-            <div *ngFor="let book of bookList" class="d-flex col-md-3 mx-auto my-5">
+            <div
+                *ngFor="let book of bookList"
+                class="d-flex col-md-3 mx-auto my-5"
+            >
                 <a [routerLink]="['view', book._id]">
-                    <div class="card " style="width: 18rem;">
+                    <div class="card" style="width: 18rem">
                         <div class="image">
-                            <img [src]="book.Image" alt="img" class="bookImg d-block mx-auto">
+                            <img
+                                [src]="book.imageLink"
+                                alt="img"
+                                class="bookImg d-block mx-auto"
+                            />
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">{{book.Title}}</h5>
+                            <h5 class="card-title">{{ book.title }}</h5>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Rs. {{book.Price}}</li>
-                            <li class="list-group-item cardAuthor"><span class="fw-bold"> Author :</span>
-                                {{book.Author}}
+                            <li class="list-group-item">
+                                {{ book.currencyCode }} {{ book.listPrice }}
+                            </li>
+                            <li class="list-group-item cardAuthor">
+                                <span class="fw-bold"> Author :</span>
+                                {{
+                                    book.author.length > 1
+                                        ? book.author.join(", ")
+                                        : book.author[0]
+                                }}
                             </li>
                         </ul>
                     </div>

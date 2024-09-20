@@ -1,8 +1,13 @@
-export class Book{
+export class Book {
     _id: String;
-    Title: string;
-    Price: Number;
-    Genre: Array<string>;
-    Author: Array<String>;
-
+    author: Array<String>;
+    publisher: String;
+    publishedDate: Date;
+    description: String;
+    isbn: Number;
+    listPrice: Number;
+    retailPrice: Number;
+    currencyCode: String;
+    pageCount: Number;
+    imageLink: String;
 }
