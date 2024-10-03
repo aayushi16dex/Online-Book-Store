@@ -41,6 +41,8 @@ router.put(
     authorizeRole(Constants.ADMIN_ROLE),
     bookController.addOrEditBook
 );
-router.get("/getBooks", bookController.getBooks);
+router.post("/getBooks", bookController.getBooks);
+router.get("/getBook/:id", bookController.getBookById);
+router.get("/fetchCategories", bookController.fetchCategories);
 
 module.exports = router;

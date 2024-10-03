@@ -4,6 +4,7 @@ const {
     buildErrorResponse,
     buildSuccessResponse,
     buildResponse,
+    buildDataResponse,
     buildDataSuccessResponse,
 } = require("../utils/response");
 
@@ -16,21 +17,19 @@ addOrEditBook = async (req, res) => {
             /** edit start */
 
             try {
-                const userId = req.params.id;
-                const updatedUser = await User.findOneAndUpdate(
-                    { _id: userId },
+                const bookId = req.params.id;
+                const updatedBook = await Book.findOneAndUpdate(
+                    { _id: bookId },
                     req.body,
                     { new: true, runValidators: true } // ensures validation is run
                 );
-
-                const { password, ...others } = updatedUser._doc;
 
                 return res
                     .status(200)
                     .json(
                         buildDataSuccessResponse(
-                            (msg = "User profile updated successfully"),
-                            (data = others),
+                            (msg = `Book with id ${bookId} updated successfully`),
+                            (data = updatedBook),
                             (flag = 1)
                         )
                     );
@@ -96,22 +95,92 @@ addOrEditBook = async (req, res) => {
 };
 
 getBooks = async (req, res) => {
-    const booksDoc = await Book.find().limit(20);
-    if (!booksDoc) {
-        return res
-            .status(200)
-            .json(buildErrorResponse((msg = "Failed to fetch books")));
-    } else {
+    const limit = 20;
+    var defaultPage = 0;
+    // Handles negative page numbers
+    const page = req.body.page
+        ? Math.max(defaultPage, parseInt(req.body.page))
+        : defaultPage;
+    const search = req.body.search ? req.body.search.trim() : "";
+    const categories = req.body.categories;
+    var booksDoc;
+
+    const regex = new RegExp(`.*${search}.*`, "i");
+    const searchQuery = {
+        title: regex,
+        ...(categories.length > 0 && { categories: { $in: categories } }),
+    };
+
+    try {
+        booksDoc = await Book.find(searchQuery)
+            .skip(page * limit)
+            .limit(limit);
+
+        if (booksDoc.length == 0) {
+            return res
+                .status(200)
+                .json(buildSuccessResponse((msg = "No book found")));
+        }
         return res.status(200).json({
-            msg: "Books fetched successfully",
-            length: booksDoc.length,
+            booksCount: booksDoc.length,
             data: booksDoc,
             flag: 1,
         });
+    } catch (error) {
+        return res
+            .status(500)
+            .json(buildErrorResponse((msg = "Failed to fetch books")));
+    }
+};
+
+getBookById = async (req, res) => {
+    var bookId = req.params.id;
+    try {
+        const bookData = await Book.findById({ _id: bookId });
+        if (!bookData) {
+            return res
+                .status(200)
+                .json(
+                    buildErrorResponse(
+                        (msg = `No book with id ${bookId} found`)
+                    )
+                );
+        } else {
+            return res.status(200).json(buildDataResponse((data = bookData)));
+        }
+    } catch (error) {
+        console.log("error: ", error.message);
+        return res
+            .status(200)
+            .json(
+                buildErrorResponse((msg = `No book with id ${bookId} found`))
+            );
+    }
+};
+
+fetchCategories = async (req, res) => {
+    try {
+        const distinctCategories = await Book.distinct("categories");
+        return res.status(200).json({
+            length: distinctCategories.length,
+            data: distinctCategories,
+            flag: 1,
+        });
+    } catch (error) {
+        console.log("error: ", error.message);
+        return res
+            .status(200)
+            .json(
+                buildErrorResponse(
+                    (msg = "Failed to fetch distinct categories")
+                )
+            );
     }
 };
 
 module.exports = {
     addOrEditBook,
     getBooks,
+    getBookById,
+    fetchCategories,
 };
