@@ -1,0 +1,6 @@
+{
+    "BASE_URL": "http://localhost:3000",
+    "BOOK_BASE_URL": "http://localhost:3000/",
+    "USER_BASE_URL": "http://localhost:3000/",
+    "CART_BASE_URL": "http://localhost:3000/"
+}

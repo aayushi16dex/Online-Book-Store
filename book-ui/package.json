@@ -12,6 +12,7 @@
   "dependencies": {
     "@angular-devkit/build-angular": "^17.3.8",
     "@angular/animations": "^17.3.11",
+    "@angular/cdk": "^16.2.14",
     "@angular/common": "^17.3.11",
     "@angular/compiler": "^17.3.11",
     "@angular/core": "^17.3.11",
@@ -20,12 +21,14 @@
     "@angular/platform-browser": "^17.3.11",
     "@angular/platform-browser-dynamic": "^17.3.11",
     "@angular/router": "^17.3.11",
-    "@ng-bootstrap/ng-bootstrap": "^14.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^16.0.0",
     "@popperjs/core": "^2.11.6",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
+    "lottie-web": "^5.12.2",
     "mongoose": "^6.8.0",
+    "ngx-lottie": "^11.0.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.7"

@@ -18,11 +18,11 @@ export class AdminViewComponent {
   }
 
   getBooksList(){
-    this.bookService.getBooks().subscribe((data) => {
+    this.bookService.getBooks({},data=>{
       this.bookResult = data;
       this.bookList = this.bookResult.result;
       console.log(this.bookList);
-    });
+    })
   }
 
 }

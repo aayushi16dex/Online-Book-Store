@@ -4,6 +4,7 @@ export const environment = {
     BOOK_BASE_URL: 'http://localhost:3000/',
     USER_BASE_URL: 'http://localhost:3000/',
     CART_BASE_URL: 'http://localhost:3000/',
+    SNACKBAR_TIMEOUT:4000,
     BOOK: {
         GET_ALL_BOOKS: 'getBooks',
         GET_BOOK: 'view?bookId=',

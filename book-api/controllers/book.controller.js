@@ -108,7 +108,7 @@ getBooks = async (req, res) => {
     const regex = new RegExp(`.*${search}.*`, "i");
     const searchQuery = {
         title: regex,
-        ...(categories.length > 0 && { categories: { $in: categories } }),
+        ...(categories?.length > 0 && { categories: { $in: categories } }),
     };
 
     try {

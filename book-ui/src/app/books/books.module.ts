@@ -11,6 +11,7 @@ import { ViewBookComponent } from './view-book/view-book.component';
 import { FormsModule } from '@angular/forms';
 import { AdminViewComponent } from './admin-view/admin-view.component';
 import { TrendingBooksComponent } from '../trending-books/trending-books.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { TrendingBooksComponent } from '../trending-books/trending-books.compone
     CommonModule,
     BooksRoutingModule,
     FormsModule,
+    MatPaginatorModule
   ]
 })
 export class BooksModule { }

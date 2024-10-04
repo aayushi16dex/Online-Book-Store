@@ -1,12 +1,14 @@
 <br /><br /><br />
 
 <!-- Search Bar -->
+<mat-paginator [length]="totalNoOfRecords" [pageSizeOptions]="[20, 50, 100]" (page)="getPaginatorData($event)" aria-label="Select page">
+</mat-paginator>
 <div class="header_search col-7 text-lg-left text-right">
     <div class="header_search_content">
         <div class="header_search_form_container">
             <form
                 #searchBookForm="ngForm"
-                (submit)="searchBook(searchBookForm)"
+                (submit)="getBooksList()"
                 class="header_search_form clearfix"
             >
                 <input

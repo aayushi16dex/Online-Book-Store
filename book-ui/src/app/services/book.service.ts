@@ -1,20 +1,28 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {environment} from '../../environments/environment.dev'
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient,private sb:MatSnackBar) { }
 
   //methods to communicate with back-end APIs
-
-  getBooks(){
+  getBooks(body: any, callback: (data: any) => void): void {
     let url = environment.BOOK_BASE_URL + environment.BOOK.GET_ALL_BOOKS
-    console.log("API call: ", url);
-    return this.httpClient.get(url); 
+    // this.loaderService.show();
+    this.httpClient.post(url, body).subscribe(
+      (resp: any) => {
+        callback(resp);
+      },
+      (error) => {
+        this.sb.open('Please try again !', '', { duration: environment.SNACKBAR_TIMEOUT })
+        // Optionally handle error
+      }
+    );
   }
   getTrendingBooks(){
     let url = environment.BOOK_BASE_URL + environment.BOOK.GET_TRENDING_BOOKS
@@ -52,5 +60,6 @@ export class BookService {
     console.log("API call: ", url);
     return this.httpClient.get(url);
   }
+  
 }
 
