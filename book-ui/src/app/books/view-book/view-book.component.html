@@ -1,54 +1,95 @@
 <section>
-    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 100%)">
-        <div *ngIf="bookDetails" class="container">
+    <div
+        class="px-4 py-5 px-md-5 text-center text-lg-start"
+        style="background-color: hsl(0, 0%, 100%)"
+    >
+        <div *ngIf="book" class="container">
             <div class="row gx-lg-5 align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0 ">
-                    <img [src]="bookDetails.Image" alt="Not found" class="bookImg">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <img
+                        [src]="book.imageLink"
+                        alt="Not found"
+                        class="bookImg"
+                    />
                 </div>
 
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="card">
                         <div class="card-body py-5 px-md-5">
                             <form>
-
                                 <div class="row">
                                     <div class="col-md-12 mb-4">
                                         <div class="form-outline">
-                                            <h4 class="form-label bookTitle" for="form3Example1">{{bookDetails.Title}}
+                                            <h4
+                                                class="form-label bookTitle"
+                                                for="form3Example1"
+                                            >
+                                                {{ book.title }}
                                             </h4>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="form3Example3">by -
-                                        {{bookDetails.Author}}</label>
+                                    <label
+                                        class="form-label"
+                                        for="form3Example3"
+                                        >By -
+                                        {{
+                                            book.author.length > 1
+                                                ? book.author.join(", ")
+                                                : book.author[0]
+                                        }}
+                                    </label>
                                 </div>
+                                
                                 <div class="row">
                                     <div class="col-md-12 mb-4">
                                         <div class="form-outline">
-                                            <label class="form-label" for="form3Example2">
-                                                <span class="fw-bold">Genre: </span>
-                                                {{bookDetails.Genre}}</label>
+                                            <label
+                                                class="form-label"
+                                                for="form3Example2"
+                                            >
+                                                <span class="fw-bold"
+                                                    >Genre:
+                                                </span>
+                                                {{ book.Genre }}</label
+                                            >
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-outline mb-4">
-                                    <label class="form-label" for="form3Example4">
+                                    <label
+                                        class="form-label"
+                                        for="form3Example4"
+                                    >
                                         <span class="fw-bold">Price: </span>
                                         Rs.
-                                        {{bookDetails.Price}}</label>
+                                        {{ book.listPrice }}</label
+                                    >
                                 </div>
- 
 
                                 <!-- Add to cart and buy now buttons -->
                                 <div class="text-center">
-                                    <button [routerLink]='["../../../cart/add", bookDetails._id]' type="button"
-                                        class="btn btn-warning  mx-1">
+                                    <button
+                                        [routerLink]="[
+                                            '../../../cart/add',
+                                            book._id
+                                        ]"
+                                        type="button"
+                                        class="btn btn-warning mx-1"
+                                    >
                                         Add to Cart
                                     </button>
 
-                                    <button [routerLink]='["../../../cart/buy-now", bookDetails._id]' type="button" class="btn btn-success mx-1">
+                                    <button
+                                        [routerLink]="[
+                                            '../../../cart/buy-now',
+                                            book._id
+                                        ]"
+                                        type="button"
+                                        class="btn btn-success mx-1"
+                                    >
                                         Buy Now
                                     </button>
                                 </div>
@@ -62,25 +103,31 @@
 </section>
 
 <ng-template #cartSuccess let-c="close" let-d="dismiss">
-
     <div class="container" id="myModal">
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title mb-4 mt-3">
+                Success
+            </h4>
+            <!-- Close button -->
+            <button
+                type="button"
+                class="btn-close closeBtn"
+                aria-label="Close"
+                (click)="d('Cross click')"
+            ></button>
+        </div>
 
-      <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title mb-4 mt-3">Success</h4>
-        <!-- Close button -->
-        <button type="button" class="btn-close closeBtn" aria-label="Close" (click)="d('Cross click')"></button>
-      </div>
+        <div class="modal-body">
+            <h3 class="form-outline mb-4">Added to cart successfully</h3>
 
-      <div class="modal-body">
-
-          <h3 class="form-outline mb-4 ">
-            Added to cart successfully
-          </h3>
-  
-          <!-- Submit button -->
-          <button type="submit" class="btn authBtn btn-block mb-4" (click)="c('Save click')">Ok</button>
-
-      </div>
+            <!-- Submit button -->
+            <button
+                type="submit"
+                class="btn authBtn btn-block mb-4"
+                (click)="c('Save click')"
+            >
+                Ok
+            </button>
+        </div>
     </div>
-  </ng-template>
-  
+</ng-template>

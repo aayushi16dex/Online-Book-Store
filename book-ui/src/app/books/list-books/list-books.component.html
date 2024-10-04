@@ -1,36 +1,43 @@
 <br /><br /><br />
 
 <!-- Search Bar -->
-<mat-paginator [length]="totalNoOfRecords" [pageSizeOptions]="[20, 50, 100]" (page)="getPaginatorData($event)" aria-label="Select page">
-</mat-paginator>
-<div class="header_search col-7 text-lg-left text-right">
-    <div class="header_search_content">
-        <div class="header_search_form_container">
-            <form
-                #searchBookForm="ngForm"
-                (submit)="getBooksList()"
-                class="header_search_form clearfix"
-            >
-                <input
-                    type="search"
-                    [(ngModel)]="searching"
-                    name="searching"
-                    class="header_search_input"
-                    placeholder="Search for book..."
-                    required
-                />
-                <button
-                    type="submit"
-                    class="header_search_button trans_300"
-                    value="Submit"
+
+<div class="mainSection">
+    <mat-paginator
+        [length]="totalNoOfRecords"
+        [pageSizeOptions]="[20, 50, 100]"
+        (page)="getPaginatorData($event)"
+        aria-label="Select page"
+    >
+    </mat-paginator>
+    <div class="header_search col-7 text-lg-left text-right">
+        <div class="header_search_content">
+            <div class="header_search_form_container">
+                <form
+                    #searchBookForm="ngForm"
+                    (submit)="getBooksList()"
+                    class="header_search_form clearfix"
                 >
-                    <i class="fa fa-search iconSearch"></i>
-                </button>
-            </form>
+                    <input
+                        type="search"
+                        [(ngModel)]="searching"
+                        name="searching"
+                        class="header_search_input"
+                        placeholder="Search for book..."
+                        required
+                    />
+                    <button
+                        type="submit"
+                        class="header_search_button trans_300"
+                        value="Submit"
+                    >
+                        <i class="fa fa-search iconSearch"></i>
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
-
 <div *ngIf="booksLength === 0; then noResult; else displayBooks"></div>
 
 <!-- If no result found -->
@@ -79,36 +86,58 @@
         <div class="row bookCardLayout">
             <div
                 *ngFor="let book of bookList"
-                class="d-flex col-md-3 mx-auto my-5"
+                class="d-flex col-lg-3 col-md-4 col-sm-6 mx-auto my-5"
             >
                 <a [routerLink]="['view', book._id]">
-                    <div class="card" style="width: 18rem">
-                        <div class="image">
-                            <img
-                                [src]="book.imageLink"
-                                alt="img"
-                                class="bookImg d-block mx-auto"
-                            />
+                    <main>
+                        <div class="book-card">
+                            <div class="book-card__cover">
+                                <div class="book-card__book">
+                                    <div class="book-card__book-front">
+                                        <img
+                                            class="book-card__img"
+                                            [src]="book.imageLink"
+                                            alt="Book Cover"
+                                        />
+                                    </div>
+                                    <div class="book-card__book-back"></div>
+                                    <div class="book-card__book-side"></div>
+                                </div>
+                                <div>
+                                    <div
+                                        class="book-card__title"
+                                        [attr.title]="book.title"
+                                    >
+                                        {{ book.title }}
+                                    </div>
+                                    <div class="book-card__author">
+                                        By
+                                        {{
+                                            book.author.length > 1
+                                                ? book.author.join(", ")
+                                                : book.author[0]
+                                        }}
+                                    </div>
+                                    <div class="book-card__rating">
+                                        <!-- {{ book.rating }} -->
+                                        4.5
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="book-card__price">
+                                        &#8377; {{ book.listPrice }}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h5 class="card-title">{{ book.title }}</h5>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                {{ book.currencyCode }} {{ book.listPrice }}
-                            </li>
-                            <li class="list-group-item cardAuthor">
-                                <span class="fw-bold"> Author :</span>
-                                {{
-                                    book.author.length > 1
-                                        ? book.author.join(", ")
-                                        : book.author[0]
-                                }}
-                            </li>
-                        </ul>
-                    </div>
+                    </main>
                 </a>
             </div>
         </div>
     </div>
 </ng-template>
+
+<mat-paginator></mat-paginator>
+<div></div>
+<div></div>
+<ng-template></ng-template>
+<ng-template></ng-template>

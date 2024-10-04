@@ -95,26 +95,32 @@ addOrEditBook = async (req, res) => {
 };
 
 getBooks = async (req, res) => {
-    const limit = 20;
+    const defaultRecordsPerPage = 20;
     var defaultPage = 0;
     // Handles negative page numbers
     const page = req.body.page
-        ? Math.max(defaultPage, parseInt(req.body.page))
+        ? Math.max(defaultPage, parseInt(req.body.pageNumber))
         : defaultPage;
-    const search = req.body.search ? req.body.search.trim() : "";
+    const searchTitle = req.body.searchTitle ? req.body.searchTitle.trim() : "";
     const categories = req.body.categories;
+    const recordsPerPage = req.body.recordsPerPage
+        ? req.body.recordsPerPage
+        : defaultRecordsPerPage;
+
     var booksDoc;
 
-    const regex = new RegExp(`.*${search}.*`, "i");
+    const regex = new RegExp(`.*${searchTitle}.*`, "i");
     const searchQuery = {
         title: regex,
         ...(categories?.length > 0 && { categories: { $in: categories } }),
     };
 
     try {
+        totalRecordsFound = await Book.countDocuments(searchQuery);
+
         booksDoc = await Book.find(searchQuery)
-            .skip(page * limit)
-            .limit(limit);
+            .skip(page * recordsPerPage)
+            .limit(recordsPerPage);
 
         if (booksDoc.length == 0) {
             return res
@@ -122,14 +128,19 @@ getBooks = async (req, res) => {
                 .json(buildSuccessResponse((msg = "No book found")));
         }
         return res.status(200).json({
-            booksCount: booksDoc.length,
+            totalRecords: totalRecordsFound,
             data: booksDoc,
             flag: 1,
         });
     } catch (error) {
+        console.log(error);
         return res
             .status(500)
-            .json(buildErrorResponse((msg = "Failed to fetch books")));
+            .json(
+                buildErrorResponse(
+                    (msg = `Failed to fetch books error: ${error}`)
+                )
+            );
     }
 };
 
