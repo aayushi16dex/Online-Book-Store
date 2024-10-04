@@ -11,7 +11,7 @@
         "retailPrice": 133.65,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=icKmd-tlvPMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=icKmd-tlvPMC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Mohini Theevu",
@@ -25,7 +25,7 @@
         "retailPrice": 49,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=MZyXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=MZyXEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Mayor of Casterbridge (Historical Novel)",
@@ -39,7 +39,7 @@
         "retailPrice": 115.94,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=ng9iEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=ng9iEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Twelfth Night",
@@ -53,7 +53,7 @@
         "retailPrice": 274.41,
         "currencyCode": "INR",
         "categories": "Drama",
-        "imageLink": "http://books.google.com/books/content?id=ICZXBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=ICZXBAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Odyssey of Homer",
@@ -67,7 +67,7 @@
         "retailPrice": 133.65,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=ORyo8qAA-CQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=ORyo8qAA-CQC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Great Expectations",
@@ -81,7 +81,7 @@
         "retailPrice": 416.98,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=9nG_BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=9nG_BAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Sunset Park",
@@ -95,7 +95,7 @@
         "retailPrice": 279.3,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=WK_mPzxMFfoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=WK_mPzxMFfoC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Jacob's Room",
@@ -109,7 +109,7 @@
         "retailPrice": 136.8,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=a98mCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=a98mCwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Festival of Insignificance",
@@ -123,7 +123,7 @@
         "retailPrice": 436.04,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=x093EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=x093EAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Homo Deus",
@@ -137,7 +137,7 @@
         "retailPrice": 250.16,
         "currencyCode": "INR",
         "categories": "Social Science",
-        "imageLink": "http://books.google.com/books/content?id=dWYyCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=dWYyCwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Encyclopedia of Global Warming and Climate Change, Second Edition",
@@ -151,7 +151,7 @@
         "retailPrice": 37713.18,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=sEo9CQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=sEo9CQAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Theory of Simple Liquids",
@@ -165,7 +165,7 @@
         "retailPrice": 7115.4,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=pbJfOUqZVSgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=pbJfOUqZVSgC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "High-Performance Thin-Layer Chromatography (HPTLC)",
@@ -179,7 +179,7 @@
         "retailPrice": 12626,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=vQ41B4iZZuAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=vQ41B4iZZuAC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "50 Years of DNA",
@@ -193,7 +193,7 @@
         "retailPrice": 3363,
         "currencyCode": "INR",
         "categories": "Literary Criticism",
-        "imageLink": "http://books.google.com/books/content?id=p3YYDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=p3YYDAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Extended Phenotype",
@@ -207,7 +207,7 @@
         "retailPrice": 211.64,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=rCGQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=rCGQDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Handbook of Industrial Chemistry and Biotechnology",
@@ -221,7 +221,7 @@
         "retailPrice": 41182,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=7VxDAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=7VxDAAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Earthquake Resistant Buildings",
@@ -235,7 +235,7 @@
         "retailPrice": 18408,
         "currencyCode": "INR",
         "categories": "Technology & Engineering",
-        "imageLink": "http://books.google.com/books/content?id=sD0l7zBsbm8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=sD0l7zBsbm8C&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Classic and Advanced Ceramics",
@@ -249,7 +249,7 @@
         "retailPrice": 19711.9,
         "currencyCode": "INR",
         "categories": "Technology & Engineering",
-        "imageLink": "http://books.google.com/books/content?id=JiJsfP_DiL4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=JiJsfP_DiL4C&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Ionic Equilibria in Analytical Chemistry",
@@ -263,7 +263,7 @@
         "retailPrice": 16874,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=Rh3-BV9smfoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=Rh3-BV9smfoC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Thermodynamics and Statistical Mechanics",
@@ -277,7 +277,7 @@
         "retailPrice": 691.06,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=NaQ-AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=NaQ-AwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Key Concepts in Geography",
@@ -291,7 +291,7 @@
         "retailPrice": 6503.84,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=EUvOviwwc2cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=EUvOviwwc2cC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "A Manual of Practical Zoology: INVERTEBRATES",
@@ -305,7 +305,7 @@
         "retailPrice": 339.25,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=mqi-QZp28sEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=mqi-QZp28sEC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Lion & Kangaroo",
@@ -319,7 +319,7 @@
         "retailPrice": 375.5,
         "currencyCode": "INR",
         "categories": "History",
-        "imageLink": "http://books.google.com/books/content?id=oQIBMD23lL0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=oQIBMD23lL0C&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Lonely Planet Vietnam",
@@ -333,7 +333,7 @@
         "retailPrice": 2749.09,
         "currencyCode": "INR",
         "categories": "Travel",
-        "imageLink": "http://books.google.com/books/content?id=TIucEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=TIucEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Past Before Us",
@@ -347,7 +347,7 @@
         "retailPrice": 3535.61,
         "currencyCode": "INR",
         "categories": "History",
-        "imageLink": "http://books.google.com/books/content?id=ScYJAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=ScYJAQAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Goddess and the Nation",
@@ -361,7 +361,7 @@
         "retailPrice": 3039.56,
         "currencyCode": "INR",
         "categories": "History",
-        "imageLink": "http://books.google.com/books/content?id=OWfcoMnHU8gC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=OWfcoMnHU8gC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Alexander the Great",
@@ -375,7 +375,7 @@
         "retailPrice": 546.34,
         "currencyCode": "INR",
         "categories": "Biography & Autobiography",
-        "imageLink": "http://books.google.com/books/content?id=Br-Ho0rlFGwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=Br-Ho0rlFGwC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Historical Dictionary of Afghanistan",
@@ -389,7 +389,7 @@
         "retailPrice": 36092.69,
         "currencyCode": "INR",
         "categories": "History",
-        "imageLink": "http://books.google.com/books/content?id=TdgnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=TdgnEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "With Honour & Glory",
@@ -403,7 +403,7 @@
         "retailPrice": 351.05,
         "currencyCode": "INR",
         "categories": "India",
-        "imageLink": "http://books.google.com/books/content?id=s5C6yZJZkIQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=s5C6yZJZkIQC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Essays in Radical Empiricism",
@@ -417,7 +417,7 @@
         "retailPrice": 442.5,
         "currencyCode": "INR",
         "categories": "History",
-        "imageLink": "http://books.google.com/books/content?id=6NN8CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=6NN8CgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The World's Religions",
@@ -431,7 +431,7 @@
         "retailPrice": 3810.22,
         "currencyCode": "INR",
         "categories": "Reference",
-        "imageLink": "http://books.google.com/books/content?id=HAg3AgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=HAg3AgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Gunpowder, Explosives and the State",
@@ -445,7 +445,7 @@
         "retailPrice": 3138.8,
         "currencyCode": "INR",
         "categories": "History",
-        "imageLink": "http://books.google.com/books/content?id=G7qoDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=G7qoDQAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "How To Tell a Story and Others",
@@ -459,7 +459,7 @@
         "retailPrice": 300,
         "currencyCode": "INR",
         "categories": "Fiction",
-        "imageLink": "http://books.google.com/books/content?id=pJ8oQhsJe8MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=pJ8oQhsJe8MC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Chinese Civilization",
@@ -473,7 +473,7 @@
         "retailPrice": 689.12,
         "currencyCode": "INR",
         "categories": "History",
-        "imageLink": "http://books.google.com/books/content?id=CUcdH6opOlcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=CUcdH6opOlcC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The American West and the Nazi East",
@@ -487,7 +487,7 @@
         "retailPrice": 7563.8,
         "currencyCode": "INR",
         "categories": "History",
-        "imageLink": "http://books.google.com/books/content?id=7Nt8DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=7Nt8DAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Desert Regions",
@@ -501,7 +501,7 @@
         "retailPrice": 8401.6,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=uFmgBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=uFmgBQAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Ecosystem Geography",
@@ -515,7 +515,7 @@
         "retailPrice": 6726,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=0C3rBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=0C3rBwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Statesman's Year-Book",
@@ -529,7 +529,7 @@
         "retailPrice": 7563.8,
         "currencyCode": "INR",
         "categories": "Political Science",
-        "imageLink": "http://books.google.com/books/content?id=4dTMDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=4dTMDQAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Africa and the Sustainable Development Goals",
@@ -543,7 +543,7 @@
         "retailPrice": 10089,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=LGydDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=LGydDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Innovations in Governmental Accounting",
@@ -557,7 +557,7 @@
         "retailPrice": 12626,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=rqzwBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=rqzwBwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Enterprise Architecture at Work",
@@ -571,7 +571,7 @@
         "retailPrice": 4625.6,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=khvttLNCfyEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=khvttLNCfyEC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Product Lifecycle Management",
@@ -585,7 +585,7 @@
         "retailPrice": 6726,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=faaZBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=faaZBwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Green Growth, Green Profit",
@@ -599,7 +599,7 @@
         "retailPrice": 2950,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=iT9q4OIgQaIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=iT9q4OIgQaIC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Introduction to Parallel Processing",
@@ -613,7 +613,7 @@
         "retailPrice": 16874,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=iNQLBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=iNQLBwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Reasons for Frequent Failure in Mergers and Acquisitions",
@@ -627,7 +627,7 @@
         "retailPrice": 4200.8,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=6NOByIZSXEIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=6NOByIZSXEIC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Global Positioning System",
@@ -641,7 +641,7 @@
         "retailPrice": 6726,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=bQntCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=bQntCAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Computer Network Security",
@@ -655,7 +655,7 @@
         "retailPrice": 4200.8,
         "currencyCode": "INR",
         "categories": "Computers",
-        "imageLink": "http://books.google.com/books/content?id=_pf-1yhDbIgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=_pf-1yhDbIgC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Counterterrorism and Cybersecurity",
@@ -669,7 +669,7 @@
         "retailPrice": 8401.6,
         "currencyCode": "INR",
         "categories": "Computers",
-        "imageLink": "http://books.google.com/books/content?id=7Sk_AAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=7Sk_AAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Confessions of the Pricing Man",
@@ -683,7 +683,7 @@
         "retailPrice": 2525.2,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=4eDHCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=4eDHCgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Successful Management by Motivation",
@@ -697,7 +697,7 @@
         "retailPrice": 8401.6,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=PU76BwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=PU76BwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Morality of Business",
@@ -711,7 +711,7 @@
         "retailPrice": 4200.8,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=FCyJo5t_CQEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=FCyJo5t_CQEC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Building a Future with BRICs",
@@ -725,7 +725,7 @@
         "retailPrice": 4200.8,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=DeSySvsLleoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=DeSySvsLleoC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Process Management",
@@ -739,7 +739,7 @@
         "retailPrice": 6726,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=J9LzBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=J9LzBwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Anxiety and Stress",
@@ -753,7 +753,7 @@
         "retailPrice": 2357.07,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=-RT_EXwMuN8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=-RT_EXwMuN8C&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Reality Lost",
@@ -767,7 +767,7 @@
         "retailPrice": 0,
         "currencyCode": "INR",
         "categories": "Business & Economics",
-        "imageLink": "http://books.google.com/books/content?id=hVptDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=hVptDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "NASA and the Politics of Climate Research",
@@ -781,7 +781,7 @@
         "retailPrice": 3363,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=6xvcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=6xvcEAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "TEACHING OF BIOLOGICAL SCIENCES (Intended for Teaching of Life Sciences, Physics, Chemistry and General Science)",
@@ -795,7 +795,7 @@
         "retailPrice": 410.05,
         "currencyCode": "INR",
         "categories": "Technology & Engineering",
-        "imageLink": "http://books.google.com/books/content?id=5fEeJk7a4JwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=5fEeJk7a4JwC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Biostatistics and Epidemiology",
@@ -809,7 +809,7 @@
         "retailPrice": 6301.2,
         "currencyCode": "INR",
         "categories": "Medical",
-        "imageLink": "http://books.google.com/books/content?id=ZEKMBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=ZEKMBgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Heart Valves",
@@ -823,7 +823,7 @@
         "retailPrice": 16874,
         "currencyCode": "INR",
         "categories": "Medical",
-        "imageLink": "http://books.google.com/books/content?id=e_tEffnOvfkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=e_tEffnOvfkC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Edible Medicinal and Non-Medicinal Plants",
@@ -837,7 +837,7 @@
         "retailPrice": 25252,
         "currencyCode": "INR",
         "categories": "Technology & Engineering",
-        "imageLink": "http://books.google.com/books/content?id=tixF72IuRFwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=tixF72IuRFwC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Handbook to the Construction and Use of Insect Collection and Rearing Devices",
@@ -851,7 +851,7 @@
         "retailPrice": 8401.6,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=4LTQQfJDL6QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=4LTQQfJDL6QC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Bioplastics for Sustainable Development",
@@ -865,7 +865,7 @@
         "retailPrice": 19352,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=V1w0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=V1w0EAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Vestibular System",
@@ -879,7 +879,7 @@
         "retailPrice": 12626,
         "currencyCode": "INR",
         "categories": "Medical",
-        "imageLink": "http://books.google.com/books/content?id=iFDmBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=iFDmBwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Edible Medicinal And Non-Medicinal Plants",
@@ -893,7 +893,7 @@
         "retailPrice": 21004,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=_a9EAAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=_a9EAAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Sociobiology: Sense or Nonsense?",
@@ -907,7 +907,7 @@
         "retailPrice": 4200.8,
         "currencyCode": "INR",
         "categories": "Philosophy",
-        "imageLink": "http://books.google.com/books/content?id=tPOPBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=tPOPBAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Handbook of Nanomedicine",
@@ -921,7 +921,7 @@
         "retailPrice": 9239.4,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=eeTOI04WuOYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=eeTOI04WuOYC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Synergetics",
@@ -935,7 +935,7 @@
         "retailPrice": 6726,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=qe71CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=qe71CAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Groundnut Crop",
@@ -949,7 +949,7 @@
         "retailPrice": 25252,
         "currencyCode": "INR",
         "categories": "Technology & Engineering",
-        "imageLink": "http://books.google.com/books/content?id=kIP1CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=kIP1CAAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Unravelling the Mystery of the Atomic Nucleus",
@@ -963,7 +963,7 @@
         "retailPrice": 4200.8,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=IJa4afSc-MsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=IJa4afSc-MsC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Foundations of Quantum Theory",
@@ -977,7 +977,7 @@
         "retailPrice": 0,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=INpCDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=INpCDwAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Niels Bohr and Complementarity",
@@ -991,7 +991,7 @@
         "retailPrice": 5038.6,
         "currencyCode": "INR",
         "categories": "Science",
-        "imageLink": "http://books.google.com/books/content?id=dmdUp97S4AYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=dmdUp97S4AYC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "The Puzzle Instinct",
@@ -1005,7 +1005,7 @@
         "retailPrice": 513.2,
         "currencyCode": "INR",
         "categories": "Mathematics",
-        "imageLink": "http://books.google.com/books/content?id=B8UJgmZhdjMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=B8UJgmZhdjMC&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     },
     {
         "title": "Assassin's Creed. Unity",
@@ -1019,6 +1019,6 @@
         "retailPrice": 432.34,
         "currencyCode": "INR",
         "categories": "Games & Activities",
-        "imageLink": "http://books.google.com/books/content?id=U5vICgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "imageLink": "http://books.google.com/books/content?id=U5vICgAAQBAJ&printsec=frontcover&img=1&zoom=2&edge=curl&source=gbs_api"
     }
 ]
