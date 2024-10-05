@@ -98,7 +98,7 @@ getBooks = async (req, res) => {
     const defaultRecordsPerPage = 20;
     var defaultPage = 0;
     // Handles negative page numbers
-    const page = req.body.page
+    const pageNumber = req.body.pageNumber
         ? Math.max(defaultPage, parseInt(req.body.pageNumber))
         : defaultPage;
     const searchTitle = req.body.searchTitle ? req.body.searchTitle.trim() : "";
@@ -119,14 +119,9 @@ getBooks = async (req, res) => {
         totalRecordsFound = await Book.countDocuments(searchQuery);
 
         booksDoc = await Book.find(searchQuery)
-            .skip(page * recordsPerPage)
+            .skip(pageNumber * recordsPerPage)
             .limit(recordsPerPage);
 
-        if (booksDoc.length == 0) {
-            return res
-                .status(200)
-                .json(buildSuccessResponse((msg = "No book found")));
-        }
         return res.status(200).json({
             totalRecords: totalRecordsFound,
             data: booksDoc,
