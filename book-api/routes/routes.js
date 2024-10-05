@@ -43,6 +43,6 @@ router.put(
 );
 router.post("/getBooks", bookController.getBooks);
 router.get("/getBook/:id", bookController.getBookById);
-router.get("/fetchCategories", bookController.fetchCategories);
+router.get("/getBookCategories", bookController.fetchCategories);
 
 module.exports = router;

@@ -15,10 +15,7 @@ export class LoaderComponent {
     };
     constructor(private loaderService: LoaderService) {}
     ngOnInit() {
-        console.log('from loader');
-
         this.loaderService.loaderState$.subscribe((state) => {
-            console.log(state, 'state');
             this.loading = state;
         });
     }

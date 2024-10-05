@@ -3,11 +3,15 @@
     box-sizing: border-box;
 }
 
-.bookListDesign {
-    margin-left: 20%;
-    box-sizing: border-box;
+.bookListDesign{
+    display:flex;
+    width:90%;
+    margin-inline: auto;
+    gap:2rem;
+    .filter-wrapper{
+        width:50%;
+    }
 }
-
 a,
 a:hover {
     text-decoration: none;
@@ -243,4 +247,27 @@ main {
             opacity: 1;
         }
     }
+
+   
+ 
 }
+.filter-container {
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    .filter-header {
+        font-size:20px;
+        background-color:rgba(255, 88, 41, 12%);
+        width:max-content;
+        padding:0.5em;
+       
+    }
+    .filter-list{
+        padding:0.5em;
+        cursor:pointer;
+        display: flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+  }
+

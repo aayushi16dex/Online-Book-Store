@@ -8,6 +8,7 @@ import { PageEvent } from '@angular/material/paginator';
     selector: 'app-list-books',
     templateUrl: './list-books.component.html',
     styleUrls: ['./list-books.component.css'],
+    preserveWhitespaces:true
 })
 export class ListBooksComponent {
     // Getting all books
@@ -19,20 +20,33 @@ export class ListBooksComponent {
     highValue: any;
     currentPageNo: number=0;
     totalNoOfRecords:number=100
-
+    contents: any[] = [
+        { id: 1, title: 'Article 1', type: 'Article' },
+        { id: 2, title: 'Video 1', type: 'Video' },
+        { id: 3, title: 'Article 2', type: 'Article' },
+        { id: 4, title: 'Podcast 1', type: 'Podcast' },
+        { id: 5, title: 'Video 2', type: 'Video' }
+      ];
+     filterList:any[] =[{label:'Sort By',icon:'keyboard_arrow_down'},{label:'Content Type',icon:'keyboard_arrow_down'}]
+      contentTypes: string[] = ['All', 'Article', 'Video', 'Podcast'];
+      selectedType: string = 'All';
     constructor(private bookService: BookService) {
         this.getBooksList();
     }
 
     getBooksList() {
         let payload = new Book()
-        payload.page=this.currentPageNo;
+        payload.pageNumber=this.currentPageNo;
         payload.categories =[];
-        payload.search=this.searching
+        payload.searchTitle=this.searching
         this.bookService.getBooks(payload,resp=>{
-            this.bookResult = resp;
-            this.bookList = this.bookResult.data;
-            this.booksLength = this.bookResult.length;
+            if(resp?.flag ===1){
+                this.bookResult = resp;
+                this.bookList = this.bookResult.data;
+                this.booksLength = this.bookResult.length;
+                // this.getCategories()
+            }
+           
         })
     }
 
@@ -46,15 +60,23 @@ export class ListBooksComponent {
         this.bookService.searchBook(this.searching).subscribe((data) => {
             this.searchResult = data;
             this.bookList = this.searchResult.result;
-            console.log(this.bookList);
         });
     }
 
      getPaginatorData(event: PageEvent){
         this.lowValue = event.pageIndex * event.pageSize;
         this.highValue = this.lowValue + event.pageSize;
-        console.log(event,"event");
         this.currentPageNo = event.pageIndex
         this.getBooksList()
     }
+
+    getCategories(){
+        this.bookService.getBookCategories(resp=>{
+            if(resp.flag==1)
+          this.contents =resp.data
+            
+        })
+    }
+
+    
 }

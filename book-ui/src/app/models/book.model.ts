@@ -9,8 +9,8 @@ export class Book {
     retailPrice: Number;
     currencyCode: String;
     pageCount: Number;
-    page:number;
+    pageNumber:number;
     categories:Array<string>;
-    search:string;
+    searchTitle:string;
     imageLink: String;
 }

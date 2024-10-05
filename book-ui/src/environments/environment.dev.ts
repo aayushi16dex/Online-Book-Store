@@ -30,6 +30,9 @@ export const environment = {
         DELETE_ITEM: 'delete',
         DELETE_CART: 'deleteCart',
     },
+    FILTER:{
+        GET_CATEGORIES:'getBookCategories'
+    }
 };
 
 //call "BOOK.BASE_URL.GET_ALL_BOOKS "

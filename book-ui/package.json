@@ -27,6 +27,7 @@
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
     "lottie-web": "^5.12.2",
+    "material-icons": "^1.13.12",
     "mongoose": "^6.8.0",
     "ngx-lottie": "^11.0.2",
     "rxjs": "~7.5.0",

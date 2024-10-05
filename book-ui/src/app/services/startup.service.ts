@@ -18,7 +18,6 @@ export class StartupService {
             environment.BOOK_BASE_URL = data.BOOK_BASE_URL
             environment.CART_BASE_URL = data.CART_BASE_URL
             environment.USER_BASE_URL = data.USER_BASE_URL
-              console.log('Startup tasks completed.',data);
               resolve(true);
           }
         })
