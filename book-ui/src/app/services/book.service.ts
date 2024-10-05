@@ -9,10 +9,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class BookService {
     constructor(private httpClient: HttpClient, private sb: MatSnackBar) {}
 
-    //methods to communicate with back-end APIs
     getBooks(body: any, callback: (data: any) => void): void {
         let url = environment.BOOK_BASE_URL + environment.BOOK.GET_ALL_BOOKS;
-        // this.loaderService.show();
         this.httpClient.post(url, body).subscribe(
             (resp: any) => {
                 callback(resp);
@@ -21,10 +19,24 @@ export class BookService {
                 this.sb.open('Please try again !', '', {
                     duration: environment.SNACKBAR_TIMEOUT,
                 });
-                // Optionally handle error
             }
         );
     }
+
+    getBookCategories(callback: (data: any) => void):void{
+      let url = environment.BOOK_BASE_URL + environment.FILTER.GET_CATEGORIES;
+      this.httpClient.get(url).subscribe(
+        (resp: any) => {
+            callback(resp);
+        },
+        (error) => {
+            this.sb.open('Please try again !', '', {
+                duration: environment.SNACKBAR_TIMEOUT,
+            });
+        }
+    );
+    }
+
     getTrendingBooks() {
         let url =
             environment.BOOK_BASE_URL + environment.BOOK.GET_TRENDING_BOOKS;

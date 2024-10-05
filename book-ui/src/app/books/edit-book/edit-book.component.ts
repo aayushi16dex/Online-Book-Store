@@ -27,12 +27,10 @@ export class EditBookComponent {
   ngOnInit() {
     this.activatedRoute.params.subscribe(data => {
       this.bookId = data["id"];
-      console.log(this.bookId)
     })
 
     this.bookService.viewBook(this.bookId).subscribe(data => {
       this.book = data;
-      console.log(this.book)
       this.bookDetails= this.book.result;
       this._id = this.book.result._id;
       this.Title = this.book.result.Title;

@@ -3,8 +3,8 @@
 <!-- Search Bar -->
 
 <div class="mainSection">
-    <mat-paginator
-        [length]="totalNoOfRecords"
+    <mat-paginator id="1"
+        [length]="bookResult?.totalRecords"
         [pageSizeOptions]="[20, 50, 100]"
         (page)="getPaginatorData($event)"
         aria-label="Select page"
@@ -38,7 +38,7 @@
         </div>
     </div>
 </div>
-<div *ngIf="booksLength === 0; then noResult; else displayBooks"></div>
+<div *ngIf="!bookList?.length; then noResult; else displayBooks"></div>
 
 <!-- If no result found -->
 <ng-template #noResult>
@@ -82,7 +82,11 @@
 
 <!-- Displaying result -->
 <ng-template #displayBooks>
+    
     <div class="bookListDesign">
+        <div class="filter-wrapper">
+            <ng-container *ngTemplateOutlet="filterBlock"></ng-container>
+         </div>
         <div class="row bookCardLayout">
             <div
                 *ngFor="let book of bookList"
@@ -135,8 +139,28 @@
         </div>
     </div>
 </ng-template>
-
-<mat-paginator></mat-paginator>
+<ng-template #filterBlock>
+    <div class="filter-container">
+         <div class="filter-header">Tweak Your Results</div >
+            @for (item of filterList; track item) {
+                <div class="filter-list">
+                    {{item.label}}
+                    <mat-icon > {{item.icon}}</mat-icon> 
+                </div>    
+            }@empty{
+                
+            }
+            
+           
+      </div>
+</ng-template>
+<mat-paginator id="1"
+[length]="bookResult?.totalRecords"
+[pageSizeOptions]="[20, 50, 100]"
+(page)="getPaginatorData($event)"
+aria-label="Select page"
+>
+</mat-paginator>
 <div></div>
 <div></div>
 <ng-template></ng-template>
