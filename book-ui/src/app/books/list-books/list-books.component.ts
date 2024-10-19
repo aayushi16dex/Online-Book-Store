@@ -21,15 +21,12 @@ export class ListBooksComponent {
     currentPageNo: number=0;
     totalNoOfRecords:number=100
     contents: any[] = [
-        { id: 1, title: 'Article 1', type: 'Article' },
-        { id: 2, title: 'Video 1', type: 'Video' },
-        { id: 3, title: 'Article 2', type: 'Article' },
-        { id: 4, title: 'Podcast 1', type: 'Podcast' },
-        { id: 5, title: 'Video 2', type: 'Video' }
       ];
      filterList:any[] =[{label:'Sort By',icon:'keyboard_arrow_down'},{label:'Content Type',icon:'keyboard_arrow_down'}]
       contentTypes: string[] = ['All', 'Article', 'Video', 'Podcast'];
       selectedType: string = 'All';
+    selectedFilter: number;
+    showFilterList: boolean;
     constructor(private bookService: BookService) {
         this.getBooksList();
     }
@@ -39,12 +36,13 @@ export class ListBooksComponent {
         payload.pageNumber=this.currentPageNo;
         payload.categories =[];
         payload.searchTitle=this.searching
+        payload.recordsPerPage = this.highValue
         this.bookService.getBooks(payload,resp=>{
             if(resp?.flag ===1){
                 this.bookResult = resp;
                 this.bookList = this.bookResult.data;
                 this.booksLength = this.bookResult.length;
-                // this.getCategories()
+                this.getCategories()
             }
            
         })
@@ -65,7 +63,7 @@ export class ListBooksComponent {
 
      getPaginatorData(event: PageEvent){
         this.lowValue = event.pageIndex * event.pageSize;
-        this.highValue = this.lowValue + event.pageSize;
+        this.highValue =  event.pageSize;
         this.currentPageNo = event.pageIndex
         this.getBooksList()
     }
@@ -74,9 +72,19 @@ export class ListBooksComponent {
         this.bookService.getBookCategories(resp=>{
             if(resp.flag==1)
           this.contents =resp.data
-            
         })
     }
+    getFilterData(idx:number){
+        this.selectedFilter = idx
+        if(idx==1)
+        this.showFilterList = !this.showFilterList
+    }
 
-    
+    checkBoxClicked(evt:any){
+     this.contents.forEach(item=>{
+        item['checked'] = evt.checked
+     })
+     console.log(this.contents);
+     
+    } 
 }

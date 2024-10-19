@@ -98,7 +98,7 @@ getBooks = async (req, res) => {
     const defaultRecordsPerPage = 20;
     var defaultPage = 0;
     // Handles negative page numbers
-    const page = req.body.page
+    const page = req.body.pageNumber
         ? Math.max(defaultPage, parseInt(req.body.pageNumber))
         : defaultPage;
     const searchTitle = req.body.searchTitle ? req.body.searchTitle.trim() : "";

@@ -13,4 +13,5 @@ export class Book {
     categories:Array<string>;
     searchTitle:string;
     imageLink: String;
+    recordsPerPage:number
 }
