@@ -236,11 +236,11 @@ main {
 
     &:hover {
         .book-card__book {
-            transform: rotate3d(0, -1, 0, 30deg) translate(-15px, -30px);
+            transform: rotate3d(0, -1, 0, 20deg) translate(-15px, -30px);
         }
 
         .book-card__book-back {
-            box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.35);
+            /* box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.35); */
         }
 
         .book-card__book-side {
@@ -254,7 +254,7 @@ main {
 .filter-container {
     margin-bottom: 20px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
+    margin-top:3rem;
     .filter-header {
         font-size:20px;
         background-color:rgba(255, 88, 41, 12%);
@@ -268,6 +268,9 @@ main {
         display: flex;
         align-items:center;
         justify-content:space-between;
+    }
+    .rotateIcon{
+        transform: rotate(180deg);
     }
   }
 

@@ -13,6 +13,7 @@ import { AdminViewComponent } from './admin-view/admin-view.component';
 import { TrendingBooksComponent } from '../trending-books/trending-books.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatIconModule} from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MatIconModule} from '@angular/material/icon';
     BooksRoutingModule,
     FormsModule,
     MatPaginatorModule,
-    MatIconModule
+    MatIconModule,
+    MatCheckboxModule
     
   ]
 })

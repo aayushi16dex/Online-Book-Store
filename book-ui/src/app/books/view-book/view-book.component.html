@@ -4,13 +4,38 @@
         style="background-color: hsl(0, 0%, 100%)"
     >
         <div *ngIf="book" class="container">
-            <div class="row gx-lg-5 align-items-center">
+    <a class="back" href="/book"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+        Back</a> 
+            <div class="row gx-lg-5">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <img
                         [src]="book.imageLink"
                         alt="Not found"
                         class="bookImg"
                     />
+                    <div class="text-center  btn__container">
+                        <button
+                            [routerLink]="[
+                                '../../../cart/add',
+                                book._id
+                            ]"
+                            type="button"
+                            class="btn btn-warning mx-1"
+                        >
+                            Add to Cart
+                        </button>
+
+                        <button
+                            [routerLink]="[
+                                '../../../cart/buy-now',
+                                book._id
+                            ]"
+                            type="button"
+                            class="btn btn-success mx-1"
+                        >
+                            Buy Now
+                        </button>
+                    </div>
                 </div>
 
                 <div class="col-lg-6 mb-5 mb-lg-0">
@@ -33,7 +58,7 @@
                                     <label
                                         class="form-label"
                                         for="form3Example3"
-                                        >By -
+                                        >Author -
                                         {{
                                             book.author.length > 1
                                                 ? book.author.join(", ")
@@ -41,58 +66,81 @@
                                         }}
                                     </label>
                                 </div>
-                                
-                                <div class="row">
-                                    <div class="col-md-12 mb-4">
-                                        <div class="form-outline">
-                                            <label
-                                                class="form-label"
-                                                for="form3Example2"
-                                            >
-                                                <span class="fw-bold"
-                                                    >Genre:
-                                                </span>
-                                                {{ book.Genre }}</label
-                                            >
-                                        </div>
-                                    </div>
+                                <div class="form-outline mb-4">
+                                    <label
+                                        class="form-label"
+                                        for="form3Example3"
+                                        >Category -
+                                        {{
+                                            book.categories.length > 1
+                                                ? book.categories.join(", ")
+                                                : book.categories[0]
+                                        }}
+                                    </label>
                                 </div>
-
+                                
                                 <div class="form-outline mb-4">
                                     <label
                                         class="form-label"
                                         for="form3Example4"
                                     >
-                                        <span class="fw-bold">Price: </span>
-                                        Rs.
-                                        {{ book.listPrice }}</label
+                                        Price (Rs.):
+                                        {{ book.listPrice +'/-'}}</label
                                     >
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label
+                                        class="form-label"
+                                        for="form3Example3"
+                                        >Publisher -
+                                        {{
+                                            book.publisher
+                                        }}
+                                    </label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label
+                                        class="form-label"
+                                        for="form3Example3"
+                                        >Published Date -
+                                        {{
+                                            book.publishedDate | date:'dd/MM/YYYY'
+                                        }}
+                                    </label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label
+                                        class="form-label"
+                                        for="form3Example3"
+                                        >Page Count -
+                                        {{
+                                            book.pageCount
+                                        }}
+                                    </label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label
+                                        class="form-label"
+                                        for="form3Example3"
+                                        >ISBN -
+                                        {{
+                                            book.isbn
+                                        }}
+                                    </label>
+                                </div>
+                                <div class="form-outline mb-4">
+                                    <label
+                                        class="form-label"
+                                        for="form3Example3"
+                                        >Description -
+                                        {{
+                                            book.description
+                                        }}
+                                    </label>
                                 </div>
 
                                 <!-- Add to cart and buy now buttons -->
-                                <div class="text-center">
-                                    <button
-                                        [routerLink]="[
-                                            '../../../cart/add',
-                                            book._id
-                                        ]"
-                                        type="button"
-                                        class="btn btn-warning mx-1"
-                                    >
-                                        Add to Cart
-                                    </button>
-
-                                    <button
-                                        [routerLink]="[
-                                            '../../../cart/buy-now',
-                                            book._id
-                                        ]"
-                                        type="button"
-                                        class="btn btn-success mx-1"
-                                    >
-                                        Buy Now
-                                    </button>
-                                </div>
+                             
                             </form>
                         </div>
                     </div>

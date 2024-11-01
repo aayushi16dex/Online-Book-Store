@@ -142,11 +142,19 @@
 <ng-template #filterBlock>
     <div class="filter-container">
          <div class="filter-header">Tweak Your Results</div >
-            @for (item of filterList; track item) {
-                <div class="filter-list">
+            
+            @for (item of filterList; track item;let id=$index) {
+                <div class="filter-list" (click)="getFilterData(id)">
                     {{item.label}}
-                    <mat-icon > {{item.icon}}</mat-icon> 
-                </div>    
+                    <mat-icon [class.rotateIcon]="showFilterList && id === selectedFilter "> {{item.icon}}</mat-icon> 
+                </div> 
+                  @for(item of contents; track item;let subIdx = $index, e = $even) {
+                    @if(selectedFilter==id && showFilterList){
+                        <div class="filter-list">
+                            <p><mat-checkbox (change)="checkBoxClicked($event)">{{item}}</mat-checkbox></p>
+                        </div>
+                    }
+                  }  
             }@empty{
                 
             }

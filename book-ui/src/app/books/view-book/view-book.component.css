@@ -7,6 +7,16 @@
 
 .card{
     width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.btn__container{
+    margin-top:1rem;
+}
+.back{
+    text-decoration: none;
+    padding:0.5rem;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    border-radius:4px;
 }
 
 /* .bookTitle{
