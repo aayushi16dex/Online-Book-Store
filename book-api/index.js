@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
 const path = require("path");
-// var logger = require('morgan');
+const logger = require("./logger");
+const morgan = require("morgan");
+
 app.use(cors());
 require("dotenv").config();
 
@@ -34,6 +36,19 @@ app.use((req, res, next) => {
     next();
 });
 
+/** Logging in file */
+const morganFormat = ":method :url :status :response-time ms";
+
+app.use(
+    morgan(morganFormat, {
+        stream: {
+            write: (message) => {
+                logger.info(message);
+            },
+        },
+    })
+);
+
 /** Parses JSON data */
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -54,7 +69,7 @@ app.get("/", (req, res) => {
 });
 
 // Enable Mongoose debug mode
-mongoose.set("debug", true);
+// mongoose.set("debug", true);
 
 /** Routes */
 var routes = require("./routes/routes");

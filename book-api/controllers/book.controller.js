@@ -1,4 +1,5 @@
 const Book = require("../models/book.model");
+const logger = require("../logger");
 
 const {
     buildErrorResponse,
@@ -34,7 +35,7 @@ addOrEditBook = async (req, res) => {
                         )
                     );
             } catch (error) {
-                console.log(error.message);
+                logger.error(`Error in addOrEditBook: ${error.message}`);
                 if (error.name === "ValidationError") {
                     // Extract all error messages from validation errors
                     const errorMessages = Object.values(error.errors).map(
@@ -73,7 +74,7 @@ addOrEditBook = async (req, res) => {
                         )
                     );
             } catch (error) {
-                console.log(error.message);
+                logger.error(`Error in addOrEditBook: ${error.message}`);
                 if (error.name === "ValidationError") {
                     // Extract all error messages from validation errors
                     const errorMessages = Object.values(error.errors).map(
@@ -89,7 +90,7 @@ addOrEditBook = async (req, res) => {
             /** end */
         }
     } catch (error) {
-        console.log("error: ", error.message);
+        logger.error(`Error in addOrEditBook: ${error.message}`);
         return res.status(500).json(buildErrorResponse());
     }
 };
@@ -103,9 +104,9 @@ getBooks = async (req, res) => {
         : defaultPage;
     const searchTitle = req.body.searchTitle ? req.body.searchTitle.trim() : "";
     const categories = req.body.categories;
-    const recordsPerPage = req.body.recordsPerPage
-        ? req.body.recordsPerPage
-        : defaultRecordsPerPage;
+    // const recordsPerPage = req.body.recordsPerPage
+    //     ? req.body.recordsPerPage
+    //     : defaultRecordsPerPage;
 
     var booksDoc;
 
@@ -128,7 +129,7 @@ getBooks = async (req, res) => {
             flag: 1,
         });
     } catch (error) {
-        console.log(error);
+        logger.error(e`Failed to fetch books error: ${error}`);
         return res
             .status(500)
             .json(
@@ -155,7 +156,7 @@ getBookById = async (req, res) => {
             return res.status(200).json(buildDataResponse((data = bookData)));
         }
     } catch (error) {
-        console.log("error: ", error.message);
+        logger.error("Error in getBookById: ", error.message);
         return res
             .status(200)
             .json(
@@ -173,7 +174,7 @@ fetchCategories = async (req, res) => {
             flag: 1,
         });
     } catch (error) {
-        console.log("error: ", error.message);
+        logger.error("Failed to fetch distinct categories: ", error.message);
         return res
             .status(200)
             .json(

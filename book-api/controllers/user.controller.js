@@ -46,7 +46,7 @@ registerOrEditUser = async (req, res) => {
             registerUser(userBody, res);
         }
     } catch (error) {
-        console.log("error: ", error.message);
+        logger.error("Error in registerOrEditUser: ", error.message);
         return res.status(500).json(buildErrorResponse());
     }
 };
@@ -89,7 +89,7 @@ loginUser = async (req, res) => {
                 );
         }
     } catch (error) {
-        console.log(error.message);
+        logger.error(`Error in loginError: ${error.message}`);
         return res.status(500).json(buildErrorResponse());
     }
 };
@@ -129,7 +129,7 @@ deleteAccount = async (req, res) => {
                     .json({ msg: "Account deleted successfully" });
         }
     } catch (error) {
-        console.log(error);
+        logger.error(`Error in deleteAccount: ${error}`);
         res.status(500).json({ error: "Internal Server Error" });
     }
 };
@@ -157,8 +157,8 @@ changePassword = async (req, res) => {
             { new: true } // returns modified doc
         );
         res.status(200).json({ error: "Password changed successfully" });
-    } catch (e) {
-        console.log(e);
+    } catch (error) {
+        logger.error(`Error in changePassword: ${error}`);
         res.status(500).json({ error: "Internal Server Error" });
     }
 };
@@ -192,7 +192,7 @@ async function registerUser(userBody, res) {
                 )
             );
     } catch (error) {
-        console.log(error.message);
+        logger.error(`Error in registerUser: ${error.message}`);
         if (error.name === "ValidationError") {
             // Extract all error messages from validation errors
             const errorMessages = Object.values(error.errors).map(
@@ -209,7 +209,7 @@ async function registerUser(userBody, res) {
 
 /* function for handling user updation */
 async function editUser(req, res) {
-      try {
+    try {
         const userId = req.params.id;
         const updatedUser = await User.findOneAndUpdate(
             { _id: userId },
@@ -229,7 +229,7 @@ async function editUser(req, res) {
                 )
             );
     } catch (error) {
-        console.log(error.message);
+        logger.error(`Error in editUser: ${error.message}`);
         if (error.name === "ValidationError") {
             // Extract all error messages from validation errors
             const errorMessages = Object.values(error.errors).map(

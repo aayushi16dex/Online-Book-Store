@@ -3,3 +3,4 @@
 .nvmrc
 package-lock.json
 .gitignore
+\log
