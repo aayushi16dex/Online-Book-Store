@@ -104,9 +104,9 @@ getBooks = async (req, res) => {
         : defaultPage;
     const searchTitle = req.body.searchTitle ? req.body.searchTitle.trim() : "";
     const categories = req.body.categories;
-    // const recordsPerPage = req.body.recordsPerPage
-    //     ? req.body.recordsPerPage
-    //     : defaultRecordsPerPage;
+    const recordsPerPage = req.body.recordsPerPage
+        ? req.body.recordsPerPage
+        : defaultRecordsPerPage;
 
     var booksDoc;
 
