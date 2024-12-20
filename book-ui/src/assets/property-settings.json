@@ -1,6 +1,6 @@
 {
-    "BASE_URL": "http://localhost:3000",
-    "BOOK_BASE_URL": "http://localhost:3000/",
-    "USER_BASE_URL": "http://localhost:3000/",
-    "CART_BASE_URL": "http://localhost:3000/"
+    "BASE_URL": "https://dashboard.render.com/web/srv-chocg7bhp8u2m2sl7080",
+    "BOOK_BASE_URL": "https://dashboard.render.com/web/srv-chocg7bhp8u2m2sl7080",
+    "USER_BASE_URL": "https://dashboard.render.com/web/srv-chocg7bhp8u2m2sl7080",
+    "CART_BASE_URL": "https://dashboard.render.com/web/srv-chocg7bhp8u2m2sl7080"
 }
